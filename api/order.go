@@ -24,7 +24,7 @@ func str2uint64(str string) (uint, error) {
 
 func AddCryptoRoutes(rg *gin.RouterGroup) {
 
-	router := rg.Group("/blockchain")
+	router := rg.Group("/cryptocurrency")
 
 	router.GET("/getAll", func(c *gin.Context) {
 		//c.JSON(200, repository.GetAllTutorials())
